@@ -1,7 +1,8 @@
 import React from 'react'
+import { Text } from 'react-native'
 
 export default function Index() {
   return (
-    <div>allergies</div>
+    <Text>allergies</Text>
   )
 }

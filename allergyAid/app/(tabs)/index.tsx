@@ -2,16 +2,7 @@ import React, { useState } from 'react'
 import { Text, View } from 'react-native'
 
 export default function Index() {
-  const [allergies, setAllergies] = useState([""]);
-  const [menuVisible, showMenu] = useState(false);
-
-  const push = (allergy: string) => {
-    setAllergies([allergy,...allergies]);
-  }
-
-  const toggleMenu = () => {
-    showMenu(!menuVisible);
-  }
+  const [allergies, setAllergies] = useState([]);
   
   if (allergies.length === 0) {
     return(
